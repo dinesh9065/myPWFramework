@@ -1,0 +1,24 @@
+{
+  "name": "framework_pw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test_qa": "cross-env ENV_NAME=qa npx playwright test --project=chromium --headed",
+    "test_qad": "cross-env ENV_NAME=qa npx playwright test --project=chromium --headed --debug",
+    "test_qa_ui": "cross-env ENV_NAME=qa npx playwright test --project=chromium --headed --ui",
+    "test_qa_tag": "cross-env ENV_NAME=qa npx playwright test --project=chromium --headed --grep \"@UAT\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.8.0"
+  },
+  "dependencies": {
+    "cross-env": "^10.1.0",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^17.2.3"
+  }
+}

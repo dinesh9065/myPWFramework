@@ -1,0 +1,37 @@
+{
+   "selections": {
+
+    "KCSM_CARE_VISIT":{
+        "frontline": "299",
+        "uiorder": 1,
+        "visibility": "none_always",
+        "category": "new_elevator",
+        " ":[
+            {
+                "expr": [
+                    "some",
+                    "KCSM_VISIT_FREQUENCY_YEARLY"
+                ],
+                "value":"1",
+                "action":"set"
+            },
+            {
+                "expr": [
+                    "some",
+                    "KCSM_AGREED_CUST_VISITS_YEARLY"
+                ],
+                "value":"2",
+                "action":"set"
+            }
+        ]
+    },
+    "KCSM_VISIT_FREQUENCY_YEARLY":{
+         "frontline": "299",
+        "uiorder": 3,
+        "visibility": "none_always",
+        "category": "new_elevator",
+        "value": 1
+    }
+
+   } 
+}
